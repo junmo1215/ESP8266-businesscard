@@ -20,15 +20,13 @@ for i = 1, #filename_list do
         node.compile(filename)
         print("Remove file " .. filename .. "...")
         file.remove(filename)
-
-        table.insert(do_file_list, filename_list[i] .. ".lc")
     end
 end
 
-filename_list = nil
 collectgarbage()
 
-for i = 1, #do_file_list do
-    dofile(do_file_list[i])
+for i = 1, #filename_list do
+    print("exec " .. filename_list[i])
+    dofile(filename_list[i] .. ".lc")
 end
 

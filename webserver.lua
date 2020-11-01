@@ -1,3 +1,4 @@
+print("===== webserver.lua start =====")
 fileContents = function(filename)
     local body = ""
     if file.open(filename, "r") then
@@ -42,3 +43,4 @@ end
 
 httpserver()
 
+print("===== webserver.lua end =====")

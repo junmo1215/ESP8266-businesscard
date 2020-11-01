@@ -1,3 +1,4 @@
+print("===== led.lua start =====")
 -- LED 控制代码
 LED_PIN = 2
 gpio.mode(LED_PIN, gpio.OUTPUT)
@@ -11,3 +12,4 @@ led_off = function()
 end
 
 led_on()
+print("===== led.lua end =====")
