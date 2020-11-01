@@ -1,0 +1,7 @@
+{
+    "baudrate": "9600",
+    "port": "COM5",
+    "minify": false,
+    "compile": false,
+    "keeppath": false
+}
