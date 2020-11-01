@@ -11,7 +11,6 @@ local filename_list = {
 }
 
 -- 编译并删除源文件
-local do_file_list = {}
 for i = 1, #filename_list do
     filename = filename_list[i] .. ".lua"
     if file.open(filename) then
